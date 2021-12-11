@@ -1,0 +1,30 @@
+<html lang= "en">
+<head>
+<title>Array sorting example</title>
+<script type="text/javascript">
+var numnames=0;
+var names= [""Darasimi", "Idimosigwe", "Olawunmi", "Taye", "Tunde"]
+function SortName(){
+thename=document.theform.newname.value;
+names[numnames]=thename;
+names.sort();
+document.theform.sorted.value=names.join(“\n”);
+
+</script>
+</head>
+
+<body>
+<h1>sorting string array</h1>
+<p>Enter two or more namds in the field below and the sorted list of names will appear in the text area as soon.</p>
+<form name="the sorted form">
+Name:
+<input type="text" name= "newname" size= "20"/>
+<input type="button" name= "addname" value= "Add"/>
+onclick= "SortNames();>
+<br/>
+<h2>Sorted names will appear on this field
+</textarea>
+</form>
+</body>
+</html>
+
